@@ -1,0 +1,186 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+.Perfil{
+    max-width: 300px;
+    
+}
+
+.hero {
+    padding: 100px 20px;
+    background-color: #555;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Seção Sobre Mim */
+.sobre {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Seção Projetos */
+.projetos {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+.projetos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projeto-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projeto-item:hover {
+    transform: translateY(-10px);
+}
+
+.projeto-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.projeto-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 50px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contato a {
+    color: limegreen;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contato a:hover {
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
